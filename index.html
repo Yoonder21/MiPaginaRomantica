@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Privado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Ingresa el código secreto</h2>
+        <input type="password" id="access-code" placeholder="Código de acceso">
+        <button onclick="checkAccess()">Entrar</button>
+        <p id="error-message"></p>
+    </div>
+
+    <div class="container" id="main-content" style="display: none;">
+        <h1>Te amo mucho, Selene ❤️🐧 Feliz San Valentin</h1>
+        <p class="romantic-message">
+            "Gracias por ser lo más bello que ha llegado a mi vida, la razón de mi vivir y lo más hermoso que tengo.
+            Eres la mujer idónea que Dios puso en mi camino para poder ser feliz."
+        </p>
+
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img1.jpg" alt="Foto 1">
+                <img src="img2.jpg" alt="Foto 2">
+                <img src="img3.jpg" alt="Foto 3">
+                <img src="img4.jpg" alt="Foto 4">
+            </div>
+        </div>
+
+        <!-- Controles del audio -->
+        <audio id="background-music" loop>
+            <source src="vivir_junto_a_ti.mp3" type="audio/mp3">
+            Tu navegador no soporta audio.
+        </audio>
+        <button onclick="toggleMusic()">🎵 Reproducir/Pausar Música</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

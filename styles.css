@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    margin: 100px auto;
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    background: #ff758c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #e84393;
+}
+
+p#error-message {
+    color: yellow;
+    font-size: 0.9em;
+}
+
+/* Estilos previos para el contenido principal */
+.container {
+    padding: 20px;
+    display: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.romantic-message {
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.carousel {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    width: 400%;
+    animation: slide 10s infinite alternate;
+}
+
+.carousel-images img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-25%); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-75%); }
+    100% { transform: translateX(0%); }
+}
